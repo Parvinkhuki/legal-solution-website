@@ -21,10 +21,59 @@
       }
     }
   </script>
+  <style>
+    *{
+      font-family: 'EB Garamond', serif;
+font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>hello world</h1>
+    <header class="max-w-screen-xl m-auto px-8 md: px-16 lg:px-24 mb-10">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start my-8">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xs font-normal">
+              <li class="mr-5">Home</li>
+              <li class="mr-5">Services  <i class="fa-solid text-xs fa-chevron-right"></i></li>
+              <li class="mr-5">Cases  <i class="fa-solid text-xs fa-chevron-right"></i></li>
+              <li class="mr-5">Blog  <i class="fa-solid text-xs fa-chevron-right"></i></li>
+              <li class="mr-5">Contact Us <i class="fa-solid w-4 fa-chevron-right"></i></li>
+            </ul>
+          </div>
+          <a class=" normal-case text-xl">
+            <img class="w-full px-2" src="./images/logo2.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class=" menu-horizontal px-1 text-xs font-normal">
+            <li class="mr-5">Home</li>
+            <li class="mr-5">Services  <i class="fa-solid text-xs fa-chevron-right"></i></li>
+            <li class="mr-5">Cases <i class="fa-solid text-xs fa-chevron-right"></i></li>
+            <li class="mr-5">Blog <i class="fa-solid text-xs fa-chevron-right"></i></li>
+            <li class="mr-5">Contact Us <i class="fa-solid  fa-chevron-right"></i></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn text-white bg-[#B68C5A] lowercase ">Free Consultation</button>
+        </div>
+      </div>
+      <div class="hero lg:h-[550px]" style="background-image: url(./images/banner.png)">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="py-10">
+            <h1 class="mb-5 text-4xl font-extrabold lg:text-6xl">We Provide Effective <br> Legal Solutions</h1>
+            <p class="mb-5 m-auto max-w-md font-normal text-sm">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <div class="flex flex-col justify-center gap-3 lg:flex-row">
+              <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs text-sm" />
+              <button class="btn text-white bg-[#B68C5A] lowercase px-10 ">Search</button>
+          </div>
+          </div>
+        </div>
+      </div>
     </header>
 </body>
 </html>
